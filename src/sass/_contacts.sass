@@ -1,0 +1,74 @@
+/*CONTACTS*/
+.contacts
+  position: relative
+  z-index: 1
+  background: #ffffff
+  &-block
+    position: absolute
+    z-index: 5
+    top: 10%
+    left: 10%
+    padding-top: 30px
+    padding-bottom: 30px
+    padding-left: 62px
+    padding-right: 40px
+    font-size: 16px
+    font-weight: 300
+    background: #fff
+    color: $text-color-dark
+    &__text
+      margin-bottom: 31px
+      &:last-child
+        margin-bottom: 0
+    &__main-title
+      display: none
+    &__title
+      display: block
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 5px
+    &__link
+      display: block
+      color: $section-color
+      text-decoration: none
+      line-height: 1.4
+      &:hover
+        text-decoration: none
+        color: lighten($active-color, 0.3)
+    &__address
+      position: relative
+      &:before
+        position: absolute
+        top: 2px
+        left: -25px
+        display: block
+        content: ''
+        width: 17px
+        height: 25px
+        background: url("../img/contacts/location.png") center 0 no-repeat
+    &__phone
+      position: relative
+      &:before
+        position: absolute
+        top: 2px
+        left: -26px
+        display: block
+        content: ''
+        width: 15px
+        height: 22px
+        background: url("../img/contacts/phone.png") center 0 no-repeat
+    &__mail
+      position: relative
+      &:before
+        position: absolute
+        top: 5px
+        left: -30px
+        display: block
+        content: ''
+        width: 20px
+        height: 14px
+        background: url("../img/contacts/email.png") center 0 no-repeat
+#map
+  width: 100%
+  height: 550px
+/*END CONTACTS*/

@@ -1,0 +1,73 @@
+/*POPUP*/
+.popup
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 999
+  background: rgba(0, 0, 0, 0.6)
+  &-content
+    width: 100%
+    max-width: 750px
+    position: fixed
+    top: 5%
+    left: 50%
+    transform: translateX(-50%)
+    color: $text-color-light
+    border-radius: 5px
+    height: auto
+    text-align: center
+    &__title
+      font-size: 21px
+      font-weight: 500
+      line-height: 1
+      text-transform: uppercase
+      padding: 25px 0
+      background: $active-color
+    &__close
+      position: absolute
+      top: -25px
+      right: -20px
+      font-size: 25px
+      background: transparent
+      color: $text-color-light
+      border: none
+  &-form
+    padding-top: 41px
+    padding-bottom: 49px
+    background: url("../img/popup-bg.png") center 0 no-repeat
+    background-size: cover
+    &__form
+      display: block
+    &__title
+      font-size: 30px
+      line-height: 0.9
+    &__subtitle
+      display: block
+      font-size: 24px
+      margin-bottom: 23px
+
+    &__label
+      display: block
+      font-size: 20px
+      font-weight: 300
+      line-height: 1.5
+      margin-bottom: 17px
+
+    &__input
+      margin-right: 16px
+      padding: 21px
+      max-width: 365px
+      width: 100%
+      height: auto
+      font-family: 'Roboto', sans-serif
+      color: #373737
+      font-size: 14px
+      font-weight: 300
+      border: none
+      border-radius: 4px
+    &__small
+      margin-top: 9px
+/*END POPUP*/

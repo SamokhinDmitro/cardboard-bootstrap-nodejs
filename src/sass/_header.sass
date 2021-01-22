@@ -1,0 +1,35 @@
+/*HEADER*/
+.header
+  background: #fff
+  padding-top: 40px
+  &-logo
+    width: 191px
+    height: 61px
+    background: url("../img/header/header-logo.png") center 0 no-repeat
+    background-size: cover
+  &-contacts
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    &__phones
+      display: flex
+    &__phone
+      display: block
+      margin-right: 15px
+      font-size: 22px
+      font-weight: 500
+      line-height: 1
+      text-decoration: none
+      text-transform: uppercase
+      color: $text-color-dark
+      cursor: pointer
+      &:first-child
+        padding-right: 15px
+        border-right: 1px solid #cfcfd0
+      &:hover
+        text-decoration: none
+        color: lighten($text-color-dark, 25)
+    &__button
+      vertical-align: center
+/*END HEADER*/
