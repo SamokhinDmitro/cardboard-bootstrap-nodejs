@@ -17,12 +17,13 @@ let options = {
 
 let connection = mysql.createPool(options);
 
-let corsOptions = {
-    origin: ['https://samokhindmitro.github.io/cardboard-bootstrap-nodejs', 'http://localhost:3000'],
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+//let corsOptions = {
+	//origin: '*'
+    //origin: 'https://samokhindmitro.github.io/cardboard-bootstrap-nodejs',
+    //optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+//};
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
