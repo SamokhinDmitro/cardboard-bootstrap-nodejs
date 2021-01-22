@@ -102,9 +102,9 @@ $(document).ready(function(){
             ],
 
         prevArrow: '<button class="feedback-btn feedback-btn__prev">'+
-            '<img src="../img/feedback/prev.png" alt="prev"></button>',
+            '<img src="img/feedback/prev.png" alt="prev"></button>',
         nextArrow: '<button class="feedback-btn feedback-btn__next">' +
-            '<img src="../img/feedback/next.png" alt="next"></button>',
+            '<img src="img/feedback/next.png" alt="next"></button>',
         autoplay: true,
         autoplaySpeed: 2000
     });
